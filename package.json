@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A sweet path for building APIs with node.",
   "main": "lib/cli/index.js",
+  "trackingCode": "UA-76137794-1",
   "scripts": {
     "test": "node tests/runner"
   },
