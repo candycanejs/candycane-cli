@@ -1,0 +1,16 @@
+{
+  "name": "<%= packageName %>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "candycane server"
+  },
+  "private": true,
+  "dependencies": {
+    "candycane": "0.1.0"
+  },
+  "devDependencies": {
+    "candycane-cli": "0.*.*"
+  }
+}
