@@ -7,11 +7,12 @@ var SilentError = require('silent-error');
 var PortFinder  = require('portfinder');
 var win         = require('ember-cli/lib/utilities/windows-admin');
 var EOL         = require('os').EOL;
+var ServeTask       = require('../tasks/serve');
 
 PortFinder.basePort = 49152;
 
 var getPort = Promise.denodeify(PortFinder.getPort);
-var defaultPort = process.env.PORT || 4200;
+var defaultPort = process.env.PORT || 3000;
 
 module.exports = Command.extend({
   name: 'serve',
@@ -38,7 +39,6 @@ module.exports = Command.extend({
           baseURL: this.project.config(commandOptions.environment).baseURL || '/'
         });
 
-        var ServeTask = this.tasks.Serve;
         var serve = new ServeTask({
           ui: this.ui,
           analytics: this.analytics,
