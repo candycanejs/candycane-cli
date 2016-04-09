@@ -7,6 +7,7 @@ module.exports = {
     return {
       'new'       : require('./commands/new'),
       'init'      : require('./commands/init'),
+      'serve'      : require('./commands/serve'),
     };
   }
 };

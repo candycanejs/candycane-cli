@@ -1,4 +1,4 @@
-var stringUtils = require('ember-cli/lib/utilities/string');
+var stringUtils = require('ember-cli-string-utils');
 
 module.exports = {
   description: '',
