@@ -3,6 +3,7 @@
 
 module.exports = {
   name: 'candycane',
+
   includedCommands: function() {
     return {
       'new'       : require('./commands/new'),

@@ -2,7 +2,7 @@
   "name": "<%= packageName %>",
   "version": "1.0.0",
   "license": "MIT",
-  "angular-cli": {},
+  "candycane-cli": {},
   "scripts": {
     "start": "candycane server"
   },

@@ -2,7 +2,7 @@
 
 var existsSync       = require('exists-sync');
 var path             = require('path');
-var ExpressServer    = require('ember-cli/lib/tasks/server/express-server');
+var ExpressServer    = require('./express-server');
 var Promise          = require('ember-cli/lib/ext/promise');
 var Task             = require('ember-cli/lib/models/task');
 var Watcher          = require('ember-cli/lib/models/watcher');
@@ -25,7 +25,7 @@ module.exports = Task.extend({
       options: options
     });
 
-    var serverRoot = './server';
+    var serverRoot = './dist';
     var serverWatcher = null;
     if (existsSync(serverRoot)) {
       serverWatcher = new ServerWatcher({
