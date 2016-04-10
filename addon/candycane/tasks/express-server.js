@@ -12,8 +12,6 @@ module.exports = ExpressServer.extend({
         throw new TypeError('candycane-cli expected the index module to export an express instance');
       }
 
-      console.log(server.length);
-
       if (server.length === 3) {
         // express app is function of form req, res, next
         return this.app.use(server);
