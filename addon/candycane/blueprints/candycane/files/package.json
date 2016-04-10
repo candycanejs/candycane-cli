@@ -8,7 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "candycane": "0.1.0"
+    "candycane": "0.0.*"
   },
   "devDependencies": {
     "candycane-cli": "0.*.*"
