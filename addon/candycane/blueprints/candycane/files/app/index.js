@@ -11,7 +11,7 @@ import morgan from 'morgan';
 import Router from './router';
 import app from './app';
 
-const expressApp = new Express();
+const expressApp = Express();
 
 app.singleton(`express`, expressApp);
 
@@ -19,6 +19,9 @@ expressApp.use(morgan(`dev`));
 expressApp.use(bodyParser.json());
 expressApp.use(bodyParser.urlencoded({ extended: true }));
 
-const router = new Router(app, container);
+
+const router = new Router(app);
 
 router.registerRoutes();
+
+export default expressApp;

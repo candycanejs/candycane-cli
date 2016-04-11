@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+var http = require('http');
+var app = require('../index');
+app = app.default || app;
+
+var port = process.env.PORT || 3000;
+
+if (typeof app !== 'function') {
+  throw new TypeError('an express instance was not exported');
+}
+
+if (app.length === 3) {
+  // express app is function of form req, res, next
+  var httpServer = http.createServer(app);
+  httpServer.listen(port)
+}

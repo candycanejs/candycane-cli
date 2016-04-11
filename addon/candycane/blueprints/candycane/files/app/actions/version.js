@@ -1,4 +1,4 @@
-import Action from 'candycane/lib/action';
+import Action from 'candycane/dist/http/action';
 
 export default class Version extends Action {
   /**

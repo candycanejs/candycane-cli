@@ -1,6 +1,6 @@
-import Router from 'candycane/http/router';
+import Router from 'candycane/dist/http/router';
 
-class AppRouter extends Router {
+export default class AppRouter extends Router {
   /**
    * Here is the function that will allow you to register the routes for your application.
    * Use the `resource`, `get`, `post`, `put`, and `delete` methods to describe your API
@@ -10,6 +10,4 @@ class AppRouter extends Router {
   registerRoutes() {
     this.get(`/`, `version`);
   }
-};
-
-export default router;
+}

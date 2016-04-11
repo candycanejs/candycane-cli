@@ -1,6 +1,9 @@
 import config from './config/environment'
-import Application from 'candycane/foundation/application';
+import Application from 'candycane/dist/foundation/application';
 
-const app = new Application();
+const app = new Application({
+  config,
+  projectDir: __dirname,
+});
 
 export default app;

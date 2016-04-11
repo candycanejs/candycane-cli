@@ -1,5 +1,5 @@
 {
-  "name": "<%= packageName %>",
+  "name": "cli-scratch",
   "version": "1.0.0",
   "license": "MIT",
   "candycane-cli": {},
@@ -8,6 +8,12 @@
   },
   "private": true,
   "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "broccoli-babel-transpiler": "github:rtablada/broccoli-babel-transpiler#babel-6",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
     "candycane": "0.0.*"
   },
   "devDependencies": {
