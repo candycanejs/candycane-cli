@@ -11,6 +11,7 @@
     "candycane": "0.0.*"
   },
   "devDependencies": {
-    "candycane-cli": "0.*.*"
+    "candycane-cli": "0.*.*",
+    "ember-cli": "^2.4.3"
   }
 }
