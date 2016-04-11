@@ -8,8 +8,7 @@ const babelSettings = {
 };
 
 module.exports = function(defaults) {
-  const config = new Babel('config', babelSettings);
   const app = new Babel('app', babelSettings);
 
-  return new Merge([app, new Funnel(config, {destDir: 'config'})]);
+  return new Merge([app]);
 };

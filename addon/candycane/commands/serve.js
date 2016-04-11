@@ -31,6 +31,7 @@ module.exports = Command.extend({
   ],
 
   run: function(commandOptions) {
+
     commandOptions.liveReloadHost = commandOptions.liveReloadHost || commandOptions.host;
 
     return this._checkExpressPort(commandOptions)
