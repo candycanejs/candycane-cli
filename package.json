@@ -1,6 +1,6 @@
 {
   "name": "candycane-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A sweet path for building APIs with node.",
   "main": "lib/cli/index.js",
   "trackingCode": "UA-76137794-1",
@@ -25,7 +25,6 @@
     "url": "https://github.com/candycanejs/candycane-cli/issues"
   },
   "homepage": "https://github.com/candycanejs/candycane-cli#readme",
-
   "dependencies": {
     "broccoli": "^0.16.9",
     "broccoli-concat": "^2.2.0",
