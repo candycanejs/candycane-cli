@@ -9,5 +9,12 @@ export default class AppRouter extends Router {
    */
   registerRoutes() {
     this.get(`/`, `version`);
+    this.get(`/posts`, `posts/index`);
+
+
+
+    // this.resource(`/posts`, `posts`, (router) => {
+    //   router.get('/', 'index');
+    // });
   }
 }

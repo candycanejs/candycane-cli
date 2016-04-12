@@ -1,0 +1,6 @@
+{
+  "name": "Candycane Example API",
+  "description": "A Restful JSON API.",
+  "repository": "https://github.com/candycanejs/candycane-cli-example",
+  "addons": ["heroku-postgresql"]
+}

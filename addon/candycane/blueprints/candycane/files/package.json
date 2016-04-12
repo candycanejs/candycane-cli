@@ -4,7 +4,9 @@
   "license": "MIT",
   "candycane-cli": {},
   "scripts": {
-    "start": "candycane server"
+    "postinstall": "./node_modules/.bin/candycane build",
+    "start": "node ./dist/bin/www",
+    "migrate": "./node_modules/.bin/knex migrate:latest"
   },
   "private": true,
   "dependencies": {
@@ -14,10 +16,14 @@
     "broccoli-babel-transpiler": "github:rtablada/broccoli-babel-transpiler#babel-6",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
-    "candycane": "0.0.*"
+    "candycane": "0.*.*",
+    "candycane-bookshelf": "^0.1.0",
+    "candycane-cli": "0.*.*",
+    "candycane-jsonapi-mapper": "0.*.*",
+    "candycane-knex": "^0.1.0",
+    "ember-cli": "^2.4.3",
+    "pg": "^4.5.3"
   },
   "devDependencies": {
-    "candycane-cli": "0.*.*",
-    "ember-cli": "^2.4.3"
   }
 }

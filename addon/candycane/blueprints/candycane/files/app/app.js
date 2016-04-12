@@ -6,4 +6,8 @@ const app = new Application({
   projectDir: __dirname,
 });
 
+app.boot();
+
+debugger;
+
 export default app;
