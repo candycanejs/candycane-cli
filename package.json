@@ -1,6 +1,6 @@
 {
   "name": "candycane-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A sweet path for building APIs with node.",
   "main": "lib/cli/index.js",
   "trackingCode": "UA-76137794-1",
