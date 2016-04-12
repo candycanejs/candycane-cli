@@ -17,7 +17,7 @@ const expressApp = Express();
 app.singleton(`express`, expressApp);
 
 expressApp.use(morgan(`dev`));
-expressApp.use(bodyParser.json());
+expressApp.use(bodyParser.json({ type: 'application/*+json' }));
 expressApp.use(bodyParser.urlencoded({ extended: true }));
 expressApp.use(cors());
 
