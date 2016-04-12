@@ -1,5 +1,5 @@
 {
-  "name": "cli-scratch",
+  "name": "<%= packageName %>",
   "version": "1.0.0",
   "license": "MIT",
   "candycane-cli": {},
@@ -21,6 +21,7 @@
     "candycane-cli": "0.*.*",
     "candycane-jsonapi-mapper": "0.*.*",
     "candycane-knex": "^0.1.0",
+    "cors": "^2.7.1",
     "ember-cli": "^2.4.3",
     "pg": "^4.5.3"
   },

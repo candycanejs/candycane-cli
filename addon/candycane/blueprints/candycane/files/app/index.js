@@ -4,6 +4,7 @@
 import Express from 'express';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+import cors from 'cors';
 
 /**
  * Import local router and application
@@ -18,6 +19,7 @@ app.singleton(`express`, expressApp);
 expressApp.use(morgan(`dev`));
 expressApp.use(bodyParser.json());
 expressApp.use(bodyParser.urlencoded({ extended: true }));
+expressApp.use(cors());
 
 
 const router = new Router(app);
