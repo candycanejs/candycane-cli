@@ -212,7 +212,7 @@ See this in action in the [`candycane-bookshelf`](https://github.com/candycanejs
 ## Contributing
 
 Candycane in early stages, but we want to make sure that the community is inclusive and welcoming.
-Be sure to follow the [community contributing guidelines](CONTRIBUTING.md).
+Be sure to follow the [community contributing guidelines](https://github.com/candycanejs/candycane-cli/blob/master/CONTRIBUTING.md).
 
 ## License
 
