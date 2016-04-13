@@ -209,6 +209,14 @@ The application container has the following methods:
 
 See this in action in the [`candycane-bookshelf`](https://github.com/candycanejs/candycane-bookshelf) documentation.
 
+## Path to 1.0
+
+There is still a lot to consider before hitting 1.0 in Candycane, Candycane CLI, and the first party addon eco-system.
+This issue below will be used to track progress and seen as a master todo list.
+If you have other feature requests, [add an issue](https://github.com/candycanejs/candycane-cli/issues/new) to this repository.
+
+* https://github.com/candycanejs/candycane-cli/issues/1
+
 ## Contributing
 
 Candycane in early stages, but we want to make sure that the community is inclusive and welcoming.
