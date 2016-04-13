@@ -208,3 +208,12 @@ The application container has the following methods:
   - `module` - Filename without extension
 
 See this in action in the [`candycane-bookshelf`](https://github.com/candycanejs/candycane-bookshelf) documentation.
+
+## Contributing
+
+Candycane in early stages, but we want to make sure that the community is inclusive and welcoming.
+Be sure to follow the [community contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+Candycane and Candycane CLI is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
