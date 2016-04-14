@@ -2,11 +2,9 @@
 
 var config = {
   development: {
-    client: 'postgresql',
+    client: 'sqlite3',
     connection: {
-      database: 'blog-test',
-      user:     process.env.USER,
-      password: '',
+      filename: './dev.sqlite'
     },
   },
   production: {
@@ -14,9 +12,5 @@ var config = {
     connection: process.env.DATABASE_URL,
   },
 };
-
-if (process.env.DATABASE_URL) {
-  config.development.connection = process.env.DATABASE_URL;
-}
 
 module.exports = config;

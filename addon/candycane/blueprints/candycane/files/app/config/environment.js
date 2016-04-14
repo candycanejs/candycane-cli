@@ -4,16 +4,15 @@ const config = {
   providers,
 
   database: {
-    client: 'postgresql',
+    client: 'sqlite3',
     connection: {
-      database: 'blog-test',
-      user:     process.env.USER,
-      password: '',
+      filename: `${process.cwd()}/dev.sqlite`
     },
   }
 };
 
 if (process.env.DATABASE_URL) {
+  config.database.client = `postgresql`;
   config.database.connection = process.env.DATABASE_URL;
 }
 
